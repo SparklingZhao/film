@@ -1,0 +1,18 @@
+server:
+  port: 8080
+  context-path: /
+  
+
+spring:
+   datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/db_film?useUnicode=true&characterEncoding=utf-8
+      username: root
+      password:
+   jpa:
+     hibernate.ddl-auto: update
+     show-sql: true
+   thymeleaf:
+    cache: false
+
+imageFilePath: F://spring boot mysql实现的电影资讯网站/项目源码/Film/src/main/webapp/static/filmImage/
